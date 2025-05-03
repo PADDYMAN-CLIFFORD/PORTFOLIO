@@ -110,7 +110,7 @@ function App() {
         <section className="about-section" id="about" data-aos="fade-up">
           <div className="container about-container">
             <div className="image-slot" data-aos="zoom-in">
-              <img src="/paddy.jpeg" alt="Paddy Clifford" loading="lazy" />
+            <img src={process.env.PUBLIC_URL + "/paddy.jpeg"} alt="Paddy Clifford" />
             </div>
             <div className="about-text" data-aos="fade-left">
               <h2>About Me</h2>
