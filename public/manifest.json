@@ -1,21 +1,16 @@
 {
-  "short_name": "Paddy Clifford",
+  "short_name": "Paddy",
   "name": "Paddy Clifford Portfolio",
   "icons": [
     {
-      "src": "%PUBLIC_URL%/favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
       "src": "%PUBLIC_URL%/logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "type": "image/png"
     },
     {
       "src": "%PUBLIC_URL%/logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "start_url": ".",

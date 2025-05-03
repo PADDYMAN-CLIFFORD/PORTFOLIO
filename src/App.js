@@ -56,7 +56,6 @@ function App() {
       <nav className={`navbar ${isMenuOpen ? 'menu-open' : ''}`}>
         <div className="container nav-container">
           <div className="navbar-brand">PADDY CLIFFORD</div>
-          
           <button 
             className="dark-mode-toggle" 
             onClick={() => setDarkMode(!darkMode)}
@@ -64,7 +63,6 @@ function App() {
           >
             {darkMode ? <FaSun /> : <FaMoon />}
           </button>
-
           <button 
             className="menu-toggle"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -72,7 +70,6 @@ function App() {
           >
             {isMenuOpen ? <FaTimes /> : <FaBars />}
           </button>
-
           <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
             <li><a href="#about" onClick={() => setIsMenuOpen(false)}>About</a></li>
             <li><a href="#skills" onClick={() => setIsMenuOpen(false)}>Skills</a></li>
@@ -110,7 +107,7 @@ function App() {
         <section className="about-section" id="about" data-aos="fade-up">
           <div className="container about-container">
             <div className="image-slot" data-aos="zoom-in">
-            <img src={process.env.PUBLIC_URL + "/paddy.jpeg"} alt="Paddy Clifford" />
+              <img src={process.env.PUBLIC_URL + "/paddy.jpeg"} alt="Paddy Clifford" />
             </div>
             <div className="about-text" data-aos="fade-left">
               <h2>About Me</h2>
@@ -136,36 +133,19 @@ function App() {
               <div className="skill-category" data-aos="fade-right">
                 <h3>Languages</h3>
                 <div className="skills-list">
-                  <div className="skill-item">
-                    <SiPython /> Python
-                  </div>
-                  <div className="skill-item">
-                    <i className="fab fa-js-square"></i> C++
-                  </div>
-                  <div className="skill-item">
-                    <i className="fas fa-database"></i> SQL
-                  </div>
+                  <div className="skill-item"><SiPython /> Python</div>
+                  <div className="skill-item"><i className="fab fa-js-square"></i> JavaScript</div>
+                  <div className="skill-item"><i className="fas fa-database"></i> SQL</div>
                 </div>
               </div>
-              
               <div className="skill-category" data-aos="fade-left">
                 <h3>Frameworks & Tools</h3>
                 <div className="skills-list">
-                  <div className="skill-item">
-                    <SiTensorflow /> TensorFlow
-                  </div>
-                  <div className="skill-item">
-                    <SiScikitlearn /> EXCEL
-                  </div>
-                  <div className="skill-item">
-                    <SiPlotly /> POWER-BI
-                  </div>
-                  <div className="skill-item">
-                    <SiPandas /> Pandas
-                  </div>
-                  <div className="skill-item">
-                    <SiNumpy /> NumPy
-                  </div>
+                  <div className="skill-item"><SiTensorflow /> TensorFlow</div>
+                  <div className="skill-item"><SiScikitlearn /> Scikit-learn</div>
+                  <div className="skill-item"><SiPlotly /> Plotly</div>
+                  <div className="skill-item"><SiPandas /> Pandas</div>
+                  <div className="skill-item"><SiNumpy /> NumPy</div>
                 </div>
               </div>
             </div>
@@ -208,9 +188,7 @@ function App() {
               <div className="contact-info" data-aos="fade-right">
                 <p>Interested in collaborating or have questions about my work?</p>
                 <div className="contact-methods">
-                  <div className="contact-item">
-                    <FaEnvelope /> cpaddy937@gmail.com
-                  </div>
+                  <div className="contact-item"><FaEnvelope /> cpaddy937@gmail.com</div>
                   <div className="social-links">
                     <a href="https://www.linkedin.com/in/clifford-paddy-22954b2a0/" target="_blank" rel="noreferrer">
                       <FaLinkedin /> LinkedIn
@@ -221,7 +199,6 @@ function App() {
                   </div>
                 </div>
               </div>
-              
               <form 
                 className="contact-form" 
                 data-aos="fade-left"
